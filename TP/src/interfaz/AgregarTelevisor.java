@@ -17,12 +17,10 @@ import javax.swing.JButton;
 import javax.swing.JOptionPane;
 import javax.swing.DefaultComboBoxModel;
 
-import mySqlData.IdentificadorDao;
 import mySqlData.LavarropaDao;
 import mySqlData.TelevisorDao;
 import negocio.NegocioLavarropa;
 import negocio.NegocioTelevisor;
-import entidades.Identificador;
 import entidades.Lavarropa;
 import entidades.Televisor;
 

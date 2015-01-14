@@ -17,10 +17,8 @@ import javax.swing.JOptionPane;
 import javax.swing.DefaultComboBoxModel;
 
 import data.DbtLavarropa;
-import mySqlData.IdentificadorDao;
 import mySqlData.LavarropaDao;
 import negocio.NegocioLavarropa;
-import entidades.Identificador;
 import entidades.Lavarropa;
 
 

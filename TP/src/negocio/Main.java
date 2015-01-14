@@ -1,6 +1,5 @@
 package negocio;
 
-import mySqlData.IdentificadorDao;
 import mySqlData.LavarropaDao;
 import mySqlData.TelevisorDao;
 import interfaz.VentanaPrincipal;

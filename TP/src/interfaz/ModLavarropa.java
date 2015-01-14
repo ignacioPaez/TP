@@ -17,13 +17,11 @@ import javax.swing.JOptionPane;
 import javax.swing.DefaultComboBoxModel;
 
 import data.DbtLavarropa;
-import mySqlData.IdentificadorDao;
 import mySqlData.LavarropaDao;
 import negocio.NegocioLavarropa;
 import entidades.Color;
 import entidades.ConsumoEnergetico;
 import entidades.Electrodomestico;
-import entidades.Identificador;
 import entidades.Lavarropa;
 
 public class ModLavarropa extends JFrame implements ActionListener {
