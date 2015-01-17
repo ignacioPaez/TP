@@ -1,0 +1,55 @@
+# SQL Manager 2007 Lite for MySQL 4.4.2.1
+# ---------------------------------------
+# Host     : localhost
+# Port     : 3306
+# Database : tp_java
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES latin1 */;
+
+SET FOREIGN_KEY_CHECKS=0;
+
+DROP DATABASE IF EXISTS `tp_java`;
+
+CREATE DATABASE `tp_java`
+    CHARACTER SET 'latin1'
+    COLLATE 'latin1_swedish_ci';
+
+USE `tp_java`;
+
+#
+# Structure for the `electrodomesticos` table : 
+#
+
+DROP TABLE IF EXISTS `electrodomesticos`;
+
+CREATE TABLE `electrodomesticos` (
+  `id_electrodomestico` int(11) NOT NULL auto_increment,
+  `precio_base` double(15,3) default NULL,
+  `peso` double(15,3) default NULL,
+  `color` varchar(45) default NULL,
+  `consumo_ener` varchar(45) default NULL,
+  `carga` double(15,3) default NULL,
+  `resolucion` double(15,3) default NULL,
+  `sintonizador` varchar(45) default NULL,
+  PRIMARY KEY  (`id_electrodomestico`),
+  UNIQUE KEY `id_electrodomestico` (`id_electrodomestico`)
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
+
+#
+# Data for the `electrodomesticos` table  (LIMIT 0,500)
+#
+
+INSERT INTO `electrodomesticos` (`id_electrodomestico`, `precio_base`, `peso`, `color`, `consumo_ener`, `carga`, `resolucion`, `sintonizador`) VALUES 
+  (16,8400.000,30.000,'Negro','B',NULL,1080.000,'true'),
+  (17,7500.000,45.000,'Blanco','A',6.000,NULL,NULL);
+COMMIT;
+
+
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
